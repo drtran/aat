@@ -20,6 +20,13 @@ public class ValidatingAppearance {
 
 	@When("^I view the main heading text$")
 	public void i_view_the_main_heading_text() throws Throwable {
+		mainSiteSteps.i_click_on_find_owners();
+		mainSiteSteps.i_wait_a_little(1000L);
+		mainSiteSteps.i_visit_veterinarians();
+		mainSiteSteps.i_wait_a_little(1000L);
+		mainSiteSteps.i_visit_errors();
+		mainSiteSteps.i_wait_a_little(1000L);
+		mainSiteSteps.i_visit_home();
 	}
 
 	@Then("^I should see the word \"([^\"]*)\"$")
