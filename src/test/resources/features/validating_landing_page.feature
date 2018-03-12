@@ -9,6 +9,6 @@ Scenario: Validating website contians appropriate text
 	
 	Given I am at the landing page "http://localhost:8080/petclinic/" 
 	When I view the main heading text 
-	Then I should see the word "Dev(Sec)Ops" 
+	Then I should see the word "DevSecOps" 
 	
 	
